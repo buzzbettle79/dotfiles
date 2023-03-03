@@ -1,0 +1,58 @@
+- clean: ['~']
+
+- link:
+    ~/.profile: profile
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/.zshrc: zshrc
+
+    ~/bin:
+        path: bin/
+        create: true
+
+    ~/.config/i3:
+        path: config/i3/
+        create: true
+
+    ~/.config/newsboat:
+        path: config/newsboat
+        create: true
+
+    ~/.config/alacritty:
+        path: config/alacritty
+        create: true
+
+    ~/.config/lvim:
+        path: config/lvim
+        create: true
+
+    ~/.config/nvim:
+        path: config/nvim
+        create: true
+
+    ~/.config/ranger:
+        path: config/ranger
+        create: true
+
+    ~/.config/picom:
+        path: config/picom
+        create: true
+
+    ~/.config/rofi:
+        path: config/rofi
+        create: true
+    
+    ~/.config/polybar:
+        path: config/polybar
+        create: true
+
+    # ~/.oh-my-zsh:
+    #     path: oh-my-zsh
+    #     create: true
+      
+    ~/.p10k.zsh:
+      path: .p10k.zsh
+      create: true
+
+
+
