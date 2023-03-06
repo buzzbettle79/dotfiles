@@ -13,6 +13,14 @@
     ~/.config/i3:
         path: config/i3/
         create: true
+    
+    ~/.config/bspwm:
+        path: config/bspwm/
+        create: true
+
+    ~/.config/sxhkd:
+        path: config/sxhkd/
+        create: true
 
     ~/.config/newsboat:
         path: config/newsboat
