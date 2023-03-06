@@ -6,6 +6,13 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Start Picom
 picom --config $HOME/.config/picom/picom.conf &
 
+# Set Wallpaper
+wal -n -i $HOME/Pictures/jelly-astronaut.jpg &
+feh --bg-fill $HOME/Pictures/jelly-astronaut.jpg &
+
+# Start Polybar
+/home/localhost/.config/polybar/launch.sh &
+
 # Fix Cursor
 xsetroot -cursor_name left_ptr
 

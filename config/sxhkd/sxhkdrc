@@ -11,8 +11,8 @@ super + @space
   rofi -modi drun,window,run,keys,ssh -show drun -theme /home/localhost/.config/rofi/themes/app-launcher.rasi
 
 # # run commands launcher
-# super + d
-#   rofi -show run -theme /home/localhost/.config/rofi/themes/app-launcher.rasi
+super + d
+rofi -show run -theme /home/localhost/.config/rofi/themes/app-launcher.rasi
 
 # run emoji launcher 
 super + shift + comma
