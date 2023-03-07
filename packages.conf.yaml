@@ -1,0 +1,22 @@
+- yay:
+  - xorg
+  - xorg-xinit
+  - bspwm
+  - sxhkd
+  - alacritty
+  - picom
+  - feh
+  - librewolf-bin
+  - ranger
+  - w3m
+  - newsboat
+  - polybar
+  - zsh
+  - curl
+  - ttf-anonymous-pro
+  - ttf-hack
+  - ttf-fira-code
+  - noto-fonts-emoji
+  - rofi
+  - rofi-calc
+  - rofi-emoji
