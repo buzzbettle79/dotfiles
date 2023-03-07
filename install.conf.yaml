@@ -58,6 +58,10 @@
         path: config/polybar
         create: true
 
+    ~/.config/polybar/polybar-collection:
+        path: polybar-collection
+        create: true
+
     ~/.oh-my-zsh:
         path: config/oh-my-zsh
         create: true
