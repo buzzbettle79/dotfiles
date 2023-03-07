@@ -9,9 +9,11 @@
       # ~/.bashrc: bashrc
     ~/.zshrc:
       path: zshrc
+      force: true
 
     ~/.zshenv:
       path: zshenv
+      force: true
       
 
     ~/Pictures/jelly-astronaut.jpg:
@@ -45,10 +47,12 @@
     ~/.config/lvim:
         path: config/lvim
         create: true
+        force: true
 
     ~/.config/nvim:
         path: config/nvim
         create: true
+        force: true
 
     ~/.config/ranger:
         path: config/ranger
