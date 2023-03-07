@@ -81,6 +81,15 @@
       path: .p10k.zsh
       create: true
 
+
+
+- git:
+
+  '~/rice/yay':
+    url: 'https://aur.archlinux.org/yay.git'
+    description: Yay the AUR helper
+
+
 - shell:
   
 
