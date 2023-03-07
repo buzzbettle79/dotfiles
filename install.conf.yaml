@@ -74,9 +74,9 @@
         path: polybar-collection
         create: true
 
-    ~/.oh-my-zsh:
-        path: config/oh-my-zsh
-        create: true
+    # ~/.oh-my-zsh:
+    #     path: config/oh-my-zsh
+    #     create: true
       
     ~/.p10k.zsh:
       path: .p10k.zsh
@@ -85,7 +85,7 @@
 
 
 
-- shell:
+# - shell:
   
 
   # - command: git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
