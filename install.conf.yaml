@@ -81,6 +81,7 @@
     ~/.p10k.zsh:
       path: .p10k.zsh
       create: true
+      force: true
 
 
 
