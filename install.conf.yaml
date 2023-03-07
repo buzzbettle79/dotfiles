@@ -1,6 +1,9 @@
 - clean: ['~']
 
 - link:
+    
+    ~/.xinitrc: xinitrc
+
     ~/.profile: profile
       # ~/.bash_profile: bash_profile
       # ~/.bashrc: bashrc
