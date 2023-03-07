@@ -1,5 +1,15 @@
 - clean: ['~']
 
+- shell:
+  - command: git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    description: Installing Yay AUR helper
+
+  - command: yay -Syyu && yay -S xorg xorg-xinit bspwm sxhkd alacritty picom lxsession python python-pywal feh librewolf-bin ranger w3m newsboat polybar zsh curl ttf-anonymous-pro ttf-hack ttf-fira-code noto-fonts-emoji rofi rofi-calc rofi-emoji
+    description: Update and install packages
+
+  - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    description: Install oh-my-zsh
+
 - link:
     
     ~/.xinitrc: xinitrc
