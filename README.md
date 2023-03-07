@@ -37,23 +37,10 @@ makepkg -si
 
 After installing `yay` run `yay -Syyu && yay -S - < dependencies.txt`. This will install all required dependencies and apps for the custom desktop environment.
 
-You can follow the next 3 installs manually or run `chmod +x helper.sh && ./helper.sh`
-
-Install `oh-my-zsh` with the below command.
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-Install `powerlevel10k` theme for `zsh`.
-```
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-
-Install `lunarvim` with the below command.
-```
-LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
-```
+Run `chmod +x helper.sh && ./helper.sh`. This will install the following apps `oh-my-zsh powerlevel10k rust lunarvim`.
 
 Navigate to this directory if not already and run `./install`. This will setup all the config and dotfiles.
 
+## Issues
 
+Currently during my testing, following the instructions and then running `startx` gets us into an X11 session successfully, most things work (have not tested extensively) but polybar does not launch and currently in my VM alacritty is unusable even with opacity off (maybe disable picom for VMs?).
