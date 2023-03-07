@@ -1,2 +1,8 @@
 [submodule "dotbot"]
 	ignore = dirty
+[submodule "dotbot-git"]
+	path = dotbot-git
+	url = https://github.com/DrDynamic/dotbot-git.git
+[submodule "dotbot-yay"]
+	path = dotbot-yay
+	url = https://github.com/oxson/dotbot-yay

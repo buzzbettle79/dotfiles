@@ -18,6 +18,13 @@ Currently holds configs for the following apps.
 
 For `./install` to run correctly you need to have already installed both `python` and `'git`
 
+`yay` must also be installed first
+
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
 ## TODOS
 
   - Gather a list of all dependencies used for config files and app setups
