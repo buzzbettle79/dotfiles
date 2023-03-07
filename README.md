@@ -35,7 +35,9 @@ cd yay
 makepkg -si
 ```
 
-After installing `yay` run `yay -S - < dependencies.txt`. This will install all required dependencies and apps for the custom desktop environment.
+After installing `yay` run `yay -Syyu && yay -S - < dependencies.txt`. This will install all required dependencies and apps for the custom desktop environment.
+
+You can follow the next 3 installs manually or run `chmod +x helper.sh && ./helper.sh`
 
 Install `oh-my-zsh` with the below command.
 ```

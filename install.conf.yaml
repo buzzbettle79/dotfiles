@@ -9,6 +9,9 @@
       # ~/.bashrc: bashrc
     ~/.zshrc:
       path: zshrc
+
+    ~/.zshenv:
+      path: zshenv
       
 
     ~/Pictures/jelly-astronaut.jpg:
