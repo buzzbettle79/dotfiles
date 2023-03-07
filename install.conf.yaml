@@ -1,5 +1,17 @@
 - clean: ['~']
 
+
+- defaults:
+
+  link:
+    create: true
+    relink: true
+    force: true
+
+  shell:
+    stdout: true
+
+
 - link:
     
     ~/.xinitrc: xinitrc
@@ -7,98 +19,97 @@
     ~/.profile: profile
       # ~/.bash_profile: bash_profile
       # ~/.bashrc: bashrc
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      path: zshrc
+      
 
     ~/Pictures/jelly-astronaut.jpg:
       path: wallpaper.jpg
-      create: true
+      
 
     ~/bin:
         path: bin/
-        create: true
+        
 
     ~/.config/i3:
         path: config/i3/
-        create: true
+        
     
     ~/.config/bspwm:
         path: config/bspwm/
-        create: true
+        
 
     ~/.config/sxhkd:
         path: config/sxhkd/
-        create: true
+        
 
     ~/.config/newsboat:
         path: config/newsboat
-        create: true
+        
 
     ~/.config/alacritty:
         path: config/alacritty
-        create: true
+        
 
     ~/.config/lvim:
         path: config/lvim
-        create: true
+        
 
     ~/.config/nvim:
         path: config/nvim
-        create: true
+        
 
     ~/.config/ranger:
         path: config/ranger
-        create: true
+        
 
     ~/.config/picom:
         path: config/picom
-        create: true
+        
 
     ~/.config/rofi:
         path: config/rofi
-        create: true
+        
     
     ~/.config/polybar:
         path: config/polybar
-        create: true
+        
 
     ~/.config/polybar/polybar-collection:
         path: polybar-collection
-        create: true
+        
 
     ~/.oh-my-zsh:
         path: config/oh-my-zsh
-        create: true
+        
       
     ~/.p10k.zsh:
       path: .p10k.zsh
-      create: true
+      
 
 
 
 - shell:
   
-  - command: pacman -S --needed git base-devel
-    description: Install git and base-devel
-    stdout: true
 
   - command: git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
     description: Installing Yay AUR helper
-    stdout: true
+    
 
   - command: yay -Syyu && yay -S xorg xorg-xinit bspwm sxhkd alacritty picom lxsession python python-pywal feh librewolf-bin ranger w3m newsboat polybar zsh curl ttf-anonymous-pro ttf-hack ttf-fira-code noto-fonts-emoji rofi rofi-calc rofi-emoji
     description: Update and install packages
-    stdout: true
+    
 
   - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     description: Install oh-my-zsh
-    stdout: true
+    
 
   - command:
     description: Install powerlevel10k theme
-    stdout: true
+    
 
   - command: LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
     description: Install LunarVim
-    stdout: true
+    
 
 
