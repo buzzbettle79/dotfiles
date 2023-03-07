@@ -88,16 +88,16 @@
   #   description: Update and install packages
   #   stdout: true
 
-  - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    description: Install oh-my-zsh
-    stdout: true
+  # - command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  #   description: Install oh-my-zsh
+  #   stdout: true
 
-  - command: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    description: Install powerlevel10k theme
-    stdout: true
+  # - command: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+  #   description: Install powerlevel10k theme
+  #   stdout: true
 
-  - command: LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
-    description: Install LunarVim
-    stdout: true
+  # - command: LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
+  #   description: Install LunarVim
+  #   stdout: true
 
 

@@ -1,5 +1,6 @@
 xorg
 xorg-xinit
+xclip
 bspwm
 sxhkd
 alacritty
@@ -9,6 +10,7 @@ librewolf-bin
 ranger
 w3m
 newsboat
+neovim
 polybar
 zsh
 curl
