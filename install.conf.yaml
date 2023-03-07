@@ -9,6 +9,7 @@
     ~/Pictures/jelly-astronaut.jpg:
       path: wallpaper.jpg
       create: true
+
     ~/bin:
         path: bin/
         create: true
@@ -57,9 +58,9 @@
         path: config/polybar
         create: true
 
-    # ~/.oh-my-zsh:
-    #     path: oh-my-zsh
-    #     create: true
+    ~/.oh-my-zsh:
+        path: config/oh-my-zsh
+        create: true
       
     ~/.p10k.zsh:
       path: .p10k.zsh
