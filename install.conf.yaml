@@ -2,10 +2,13 @@
 
 - link:
     ~/.profile: profile
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
+      # ~/.bash_profile: bash_profile
+      # ~/.bashrc: bashrc
     ~/.zshrc: zshrc
 
+    ~/Pictures/jelly-astronaut.jpg:
+      path: wallpaper.jpg
+      create: true
     ~/bin:
         path: bin/
         create: true
